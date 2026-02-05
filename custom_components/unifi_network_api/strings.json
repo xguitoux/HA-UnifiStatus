@@ -1,0 +1,56 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "UniFi Network API",
+        "description": "Connect to your UniFi Network controller using the local API.",
+        "data": {
+          "host": "Host",
+          "api_key": "API Key",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "host": "Hostname or IP address of your UniFi controller",
+          "api_key": "API key generated from UniFi controller settings"
+        }
+      },
+      "site": {
+        "title": "Select Site",
+        "description": "Multiple sites found. Select the site to monitor.",
+        "data": {
+          "site_id": "Site"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid API key",
+      "cannot_connect": "Cannot connect to controller",
+      "no_sites": "No sites found on controller",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This site is already configured"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "device_state": { "name": "State" },
+      "cpu_utilization": { "name": "CPU Utilization" },
+      "memory_utilization": { "name": "Memory Utilization" },
+      "uptime": { "name": "Uptime" },
+      "load_average_1min": { "name": "Load Average (1m)" },
+      "load_average_5min": { "name": "Load Average (5m)" },
+      "load_average_15min": { "name": "Load Average (15m)" },
+      "firmware_version": { "name": "Firmware Version" },
+      "firmware_updatable": { "name": "Firmware Updatable" },
+      "uplink_tx_rate": { "name": "Uplink TX Rate" },
+      "uplink_rx_rate": { "name": "Uplink RX Rate" },
+      "last_heartbeat": { "name": "Last Heartbeat" },
+      "total_clients": { "name": "Total Clients" },
+      "wired_clients": { "name": "Wired Clients" },
+      "wireless_clients": { "name": "Wireless Clients" },
+      "vpn_clients": { "name": "VPN Clients" },
+      "device_count": { "name": "Device Count" }
+    }
+  }
+}

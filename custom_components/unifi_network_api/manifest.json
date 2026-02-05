@@ -1,0 +1,11 @@
+{
+  "domain": "unifi_network_api",
+  "name": "UniFi Network API",
+  "documentation": "https://developer.ui.com/network/v10.1.68/gettingstarted",
+  "requirements": [],
+  "version": "1.0.0",
+  "dependencies": [],
+  "codeowners": ["@xguitoux"],
+  "config_flow": true,
+  "iot_class": "local_polling"
+}
